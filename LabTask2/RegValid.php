@@ -40,13 +40,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 </form><br>
 
-<form action="wlcome.php" method="POST">
+<form method="POST">
 <legend>Email: <input type="text" name = "email"> <?php echo $validateemail; ?> 
 <input type="submit">
 
 </form><br>
 
-<form action="wlcome.php" method="POST"><fieldset>
+<form method="POST"><fieldset>
 <legend>Gender</legend>
  <legend> <input type="radio" id="Male" name="Male">
  <label for="Male">Male</label>
