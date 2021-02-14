@@ -24,16 +24,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 	else{
 		$validateemail="your email is".$email;
 	}
-	if(!isset($_REQUEST["vechicle1"]))
-	{
-		$v1 = $_REQUEST["vechicle1"];
-	}
-	if(isset($_REQUEST["vechicle2"])){
-		$v2 = $_REQUEST["vechicle2"];
-	}
-	if(isset($_REQUEST["vechicle3"])){
-		$v2 = $_REQUEST["vechicle3"];
-	}
 }
 ?>
 
