@@ -23,9 +23,12 @@
 <tr> <td>Confirm Password:</tb>
 <td>  <input type="text" name='cPassword'> </td></tr>
 <td><h3> Gender </h3></td>
-<tr> <td>Male:</tb>
-<td>  <input type="radio" name='male'> Female:</tb> <td>  <input type="radio" name='male'> Other:</tb> <td>  <input type="radio" name='male'> </td> 
-</tr>
+
+<tr> <td><input type="radio" name='male'> Male:</tb>
+
+ <tr> <td><input type="radio" name='male'> Female:</tb>
+ <tr> <td><input type="radio" name='male'> Others:</tb>
+ </tr>
 
 <td> <h3> Date Of Birth </h3> </td>
 <tr><td> <input type="date" name="dob"> (mm/dd/yyyy)<td></tr>
