@@ -20,6 +20,8 @@ Hii, <h3><?php echo $_SESSION["username"];?></h3>
 <br>Your Profile Page.
 <br><br>
 <?php
+$select="Select";
+$pro1=$pro2=$pro3="";
 $radio1=$radio2=$radio3="";
 $firstname=$email="";
 $pass="";
@@ -40,8 +42,16 @@ if ($userQuery->num_rows > 0) {
       else if($row["gender"]=="male")
       { $radio2="checked"; }
       else{$radio3="checked";}
-   
+
+      // if($row["profession"]=="student"){$pro1="Student";}
+      // else if ($row["profession"]=="teacher"){$pro2="Teacher";}
+      // else ($row["profession"]=="stuff"){$pro3="Staff";}
+
   } 
+$userQuery=$connection->ShowAll($conobj,"student");
+while($row=$userQuery->fetch_assoc()){
+$select=$row["profession"];
+}
 }
   else {
     echo "0 results";
@@ -56,8 +66,8 @@ Name : <input type='text' name='firstname' value="<?php echo $firstname; ?>" >  
     Email : <input type='text' name='email' value="<?php echo $email; ?>" > <br> <br>
  Gender: 
      <input type='radio' name='gender' value='female'<?php echo $radio1; ?>>Female  
-     <input type='radio' name='gender' value='male' <?php echo $radio2; ?> >Male  
-     <input type='radio' name='gender' value='other'<?php  $radio3; ?> > Other  <br> <br>
+     <input type='radio' name='gender' value='male' <?php echo $radio2; ?>>Male  
+     <input type='radio' name='gender' value='other'<?php echo $radio3; ?> > Other  <br> <br>
      New Password     :<input type="password" name="newpassword">  <br>
      Confirm Password  :<input type="password" name="conpassword">   <br>
      <br>
@@ -65,12 +75,13 @@ Name : <input type='text' name='firstname' value="<?php echo $firstname; ?>" >  
      Address :<input type="text" name="address"> 
      <br>
      Profession : <select name="prop" id="prop">
-              <option value="student">student</option>
+              <option value="Select" name=prop><?php echo $select; ?></option>
+
+              <!-- <option value="student">student</option>
               <option value="teacher">teacher</option>
               <option value="stuff">stuff</option>
-              <option value="admin">admin</option>
-            </select><br>
-
+              <option value="admin">admin</option> -->
+          </select><br>
       Interest: <input type="text" name="inter"> 
       <br>
       <br>

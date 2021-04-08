@@ -17,7 +17,8 @@ header("location: pageone.php");
     <input name="submit" type="submit" value="LOGIN">
 </form>
 <br>
+<span>
 <?php echo $error; ?>
-
+</span>
 </body>
 </html>
