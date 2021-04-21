@@ -1,4 +1,4 @@
-<?php
+	<?php
 include('../model/db.php');
 
 

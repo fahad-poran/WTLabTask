@@ -1,6 +1,7 @@
 <?php
+
 include('../model/db.php');
-session_start(); 
+session_start();
 
  $error="";
 // store session data

@@ -11,9 +11,9 @@ if(empty($_POST['username']) || empty($_POST['password'])){
  	//storing into variables
  	$username= $_POST['username'];
  	$password = $_POST['password'];
-
+//object of db class
  	$connection = new db();
- 	$conboj = $connection->OpenCon();
+ 	$conboj = $connection->OpenCon(); //call function
 
  	$userQuery= $connection->CheckUser($conboj,"student",$username,$password);
 
