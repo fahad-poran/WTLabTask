@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+    <script>
+    
+        function openSlideMenu(){
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft='250px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft='0';
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()"> <i class ="fas fa-bars"></i></a>
+          
+        </span>
+        <div id="menu" class = "nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+            <i class="fas fa-times"></i></a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#contact">Contact</a>
+
+        </div>
+        <h1>Responsive Animated Sidebar Menu</h1>
+    </div>
+    <script src="script.js"></script>
+    <div id="contact">Visit Us on Facebook and whatsapp</div>
+</body>
+</html>

@@ -9,7 +9,7 @@ if(empty($_SESSION["username"])) // Destroying All Sessions
 header("Location: ../control/login.php"); // Redirecting To Home Page
 }
 
-?>
+?>  
 
 <!DOCTYPE html>
 <html>

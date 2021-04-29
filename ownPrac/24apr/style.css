@@ -1,0 +1,50 @@
+@import url('//fonts.google.com/share?selection.family=Oswald');
+
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+    overflow-x: hidden;
+}
+.nav{
+    height: 100%;
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: .7s;
+    
+}
+.nav a{
+     display: block; /* it will show one by 1 */
+     padding: 20px 35px; /* line spacing */
+    font-size: 25px;
+    text-decoration: none; /* now no blue underline */
+    color: #ccc;
+    
+}
+.nav a:hover {
+    color: #fff;
+    transition: .4s;
+}
+.nav .close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+.slide a {
+    color: #000;
+    font-size: 40px;
+
+}
+#content{
+    padding: 20px; /* change of possition */
+    transition: margin-left 0.7s; /* content back to the place */
+    overflow: hidden;
+    
+}
